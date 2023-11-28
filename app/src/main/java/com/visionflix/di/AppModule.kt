@@ -5,7 +5,7 @@ import com.visionflix.core.data.remote.TvApi
 import com.visionflix.core.data.repostirory.MovieRemoteRepositoryImpl
 import com.visionflix.core.data.repostirory.TvRemoteRepositoryImpl
 import com.visionflix.core.domain.use_case.HomeUseCase
-import com.visionflix.core.presentation.ui.screen.home.HomeViewModel
+import com.visionflix.core.presentation.viewmodel.HomeScreenViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -15,7 +15,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 val appModule = module {
     viewModel {
-        HomeViewModel(get())
+        HomeScreenViewModel(get())
     }
 }
 

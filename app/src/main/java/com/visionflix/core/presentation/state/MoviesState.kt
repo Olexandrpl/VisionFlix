@@ -1,4 +1,4 @@
-package com.visionflix.core.presentation.ui.screen.home
+package com.visionflix.core.presentation.state
 
 import com.visionflix.core.domain.movie_model.Movie
 

@@ -7,9 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.visionflix.core.presentation.ui.screen.home.HomeViewModel
+import com.visionflix.core.presentation.navigation.Navigation
 import com.visionflix.core.presentation.ui.theme.VisionFlixTheme
-import org.koin.androidx.compose.koinViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +20,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val viewModel = koinViewModel<HomeViewModel>()
+                    Navigation()
                 }
             }
         }

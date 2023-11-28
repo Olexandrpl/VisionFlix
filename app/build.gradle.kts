@@ -50,6 +50,8 @@ android {
 }
 
 dependencies {
+    //Navigation
+    implementation ("androidx.navigation:navigation-compose:2.7.5")
 
     //Koin
     implementation("io.insert-koin:koin-androidx-navigation:3.5.2-RC1")

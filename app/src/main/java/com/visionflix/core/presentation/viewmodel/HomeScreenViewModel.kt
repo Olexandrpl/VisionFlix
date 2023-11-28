@@ -1,4 +1,4 @@
-package com.visionflix.core.presentation.ui.screen.home
+package com.visionflix.core.presentation.viewmodel
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
@@ -7,11 +7,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.visionflix.common.Resources
 import com.visionflix.core.domain.use_case.HomeUseCase
+import com.visionflix.core.presentation.state.MoviesState
+import com.visionflix.core.presentation.state.TvState
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import java.util.Locale
 
-class HomeViewModel(
+class HomeScreenViewModel(
     private val homeUseCase: HomeUseCase
 ) : ViewModel() {
     private val _trendingMoviesState: MutableState<MoviesState> = mutableStateOf(MoviesState())
